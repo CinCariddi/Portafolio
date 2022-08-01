@@ -1,0 +1,39 @@
+.home {
+    background-color:  #eeeeee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.datos{
+    z-index: 2;
+    color: #000000;
+    opacity: 65%;
+    align-items: center;
+    height: 100vh;
+    max-width: 2000px;
+    width: 100vw;
+    /* width: 50vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* transform: scale(2) translateX(2px) translateY(1px);
+    transition: all 0.5s ease-out */
+}
+
+/* .datos:active{
+    width: 50vw;
+    transform: scale(1) translateX(0px) translateY(0px);
+} */
+
+.nombre{
+    margin-left: 10%;
+    margin-right: 0%;
+    width: 90%;
+    font-family: monospace;
+    font-size:100px;
+}
+
+.sobreMi{
+    width: 100%;
+}

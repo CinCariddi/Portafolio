@@ -1,0 +1,13 @@
+.componente {
+    height: '15vh';
+    width: '90%';
+    background: '#b39ddb';
+    color: '#ffffff';
+    border: '2px solid #836fa9'
+}
+
+.css-1uwgr7b-MuiTypography-root{
+    font-family:monospace;
+    text-align: start;
+    letter-spacing:0em
+}

@@ -1,0 +1,45 @@
+.imagenProyecto{
+    height: 50%;
+    width: 80%;
+}
+
+.imagenFondo{
+    height: 70vh;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+ 
+
+#info{
+    display: none;
+    background-color:#bcbcbc;
+    color: #000000;
+    opacity: 0.8;
+    font-family: monospace;
+    letter-spacing:0em;
+    height: 64vh;
+    width: 70vw;
+}
+
+#info2{
+    display: none;
+    background-color:#bcbcbc;
+    color: #000000;
+    opacity: 0.8;
+    font-family: monospace;
+    letter-spacing:0em;
+    height: 64vh;
+    width: 70vw;
+}
+
+#info3{
+    display: none;
+    background-color:#bcbcbc;
+    color: #000000;
+    opacity: 0.8;
+    font-family: monospace;
+    letter-spacing:0em;
+    height: 64vh;
+    width: 70vw;
+}
