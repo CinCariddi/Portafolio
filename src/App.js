@@ -3,9 +3,12 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Components/Home';
 import AboutMe from './Components/AboutMe';
 import Barra from './Components/NavBar';
-import Proyects from './Components/Proyects';
+import DetailProyect from './Components/DetailProyect';
 import Studies from './Components/Studies';
 import Contact from './Components/Contact';
+import ClubDeportivo from './Components/ClubDeportivo';
+import PokemonApp from './Components/PokemonApp';
+import DogApp from './Components/DogApp';
 
 function App() {
   return (
@@ -15,9 +18,12 @@ function App() {
           <Route path='/' element={<Barra />}>
             <Route index element={<Home />}/>
             <Route path='sobre' element={<AboutMe />}/>
-            <Route path='proyectos' element={<Proyects />}/>
+            <Route path='proyectos' element={<DetailProyect />}/>
             <Route path='estudio' element={<Studies />}/>
             <Route path='contacto' element={<Contact />}/>
+            <Route path='clubdeportivo' element={<ClubDeportivo />}/>
+            <Route path='pokemon' element={<PokemonApp />}/>
+            <Route path='perros' element={<DogApp />}/>
           </Route>
         </Routes>
       </Router>

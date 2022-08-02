@@ -36,4 +36,18 @@
 
 .sobreMi{
     width: 100%;
+    font-family: monospace;
+}
+
+.css-1uwgr7b-MuiTypography-root{
+    font-family: monospace;
+    text-align: right;
+}
+
+.proyecto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
 }

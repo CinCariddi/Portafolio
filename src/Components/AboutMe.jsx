@@ -1,5 +1,5 @@
 import { Grid, Box, Typography } from "@mui/material";
-import './AboutMe.css'
+import '../Style/AboutMe.css'
 
 export default function AboutMe() {
 

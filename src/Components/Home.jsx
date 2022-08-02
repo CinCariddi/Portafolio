@@ -13,8 +13,12 @@ export default function Home() {
                     <AboutMe />
                 </div>
             </div>
-            <div>
+            <div className='proyecto'>
+                <h3>Proyectos</h3>
                 <Proyects />
+                <a href='/proyectos'>
+                    <button>Ver más</button>
+                </a>
             </div>
         </div>
     );

@@ -14,10 +14,12 @@ export default function Barra() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
-                        <NavDropdown title="Más Info" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to='/proyectos'>Proyectos</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to='/estudio'>Habilidades</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to='/contacto'>Contacto</NavDropdown.Item>
+                        <Nav.Link as={Link} to='/estudio'>Habilidades</Nav.Link>
+                        <Nav.Link as={Link} to='/contacto'>Contacto</Nav.Link>
+                        <NavDropdown title="Proyectos" id="basic-nav-dropdown">
+                            <NavDropdown.Item as={Link} to='/clubdeportivo'>Club Deportivo</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/pokemon'>Pokemon App</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/perros'>Dog App</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
