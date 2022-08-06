@@ -1,6 +1,9 @@
 import '../Style/Home.css'
 import Proyects from './Proyects';
 import AboutMe from './AboutMe'
+import Footer from './Footer';
+import Habilidades from './Habilidades';
+import Contact from './Contact';
 
 export default function Home() {
     return (
@@ -19,6 +22,15 @@ export default function Home() {
                 <a href='/proyectos'>
                     <button>Ver más</button>
                 </a>
+            </div>
+            <div>
+                <Habilidades />
+            </div>
+            <div>
+                <Contact />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     );

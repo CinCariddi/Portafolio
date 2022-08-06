@@ -51,3 +51,6 @@
     align-items: center;
     font-family: monospace;
 }
+.a{
+    list-style: none;
+}

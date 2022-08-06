@@ -9,13 +9,14 @@ export default function Barra() {
     <>
         <Navbar className='navBg' variant='dark' expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to='/'>CC</Navbar.Brand>
+                <Navbar.Brand href='/'>CC</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
-                        <Nav.Link as={Link} to='/estudio'>Habilidades</Nav.Link>
-                        <Nav.Link as={Link} to='/contacto'>Contacto</Nav.Link>
+                        <Nav.Link href="#aboutme">Inicio</Nav.Link>
+                        <Nav.Link href="#proyecto">Creaciones</Nav.Link>
+                        <Nav.Link href="#habilidades">Habilidades</Nav.Link>
+                        <Nav.Link href="#contactos">Contacto</Nav.Link>
                         <NavDropdown title="Proyectos" id="basic-nav-dropdown">
                             <NavDropdown.Item as={Link} to='/clubdeportivo'>Club Deportivo</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to='/pokemon'>Pokemon App</NavDropdown.Item>

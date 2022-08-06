@@ -7,7 +7,7 @@
 }
 
 .css-1uwgr7b-MuiTypography-root{
-    font-family:monospace;
-    text-align: start;
-    letter-spacing:0em
+    font-family:monospace !important;
+    text-align: start !important;
+    letter-spacing:0em !important
 }

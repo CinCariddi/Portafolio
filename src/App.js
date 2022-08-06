@@ -17,10 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Barra />}>
             <Route index element={<Home />}/>
-            <Route path='sobre' element={<AboutMe />}/>
             <Route path='proyectos' element={<DetailProyect />}/>
-            <Route path='estudio' element={<Studies />}/>
-            <Route path='contacto' element={<Contact />}/>
             <Route path='clubdeportivo' element={<ClubDeportivo />}/>
             <Route path='pokemon' element={<PokemonApp />}/>
             <Route path='perros' element={<DogApp />}/>
