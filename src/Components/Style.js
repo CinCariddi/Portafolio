@@ -1,20 +1,16 @@
-import { createTheme } from '@mui/material/styles'
-const theme = createTheme({
-    palette: {
-      primary: {
-        light: '#6746c3',
-        main: '#311b92',
-        dark: '#000063',
-        contrastText: '#ffffff',
-      },
-      secondary: {
-        light: '#e6ceff',
-        main: '#b39ddb',
-        dark: '#836fa9',
-        contrastText: '#000000',
-      },
-    },
-  });
-  console.log(theme)
+const colores = {
+  50: '#ede7f6',
+  100: '#d1c4e9',
+  200: '#b39ddb',
+  300: '#9575cd',
+  400: '#7e57c2',
+  500: '#673ab7',
+  600: '#5e35b1',
+  700: '#512da8',
+  800: '#4527a0',
+  900: '#311b92',
+  Black: '#000000',
+  White: '#FFFFFF'
+}
 
-  export default theme
+export default colores

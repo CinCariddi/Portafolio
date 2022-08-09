@@ -4,7 +4,24 @@
   }
 }
 
-.App-header {
+
+/* Fuente de titulo */
+@import url('https://fonts.googleapis.com/css2?family');
+/* font-family: 'Cinzel', serif */
+
+/* Fuente de subtitulo */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/* font-family: 'Amatic SC', cursive */
+
+/* Fuente de texto */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/* font-family: 'Nanum Pen Script', cursive */
+
+/* .texto{
+  font-family: 'Indie Flower', cursive 
+} */
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -13,11 +30,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -28,14 +42,76 @@
   }
 }
 
-section {
-  color:#000000;
-  /* background-color: #e4d1f9; */
-  /* text-shadow: 3px 3px rgba(50, 50, 70, 0.5); */
-  height: 100vh;
+.navBg{
+  background-color: #311b92;
+  color: #FFFFFF;
+  position: sticky !important;
+  top: 0;
+  font-family: 'Amatic SC', cursive;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  height: 15vh;
 }
 
-.navBg{
-  background-color: #102027;
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Nanum Pen Script';
+  font-size: 70px !important;
+}
+
+
+h2{
+  font-family: 'Amatic SC', cursive;
+  margin: 2%
+}
+
+p{
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+span{
+  font-family: 'Cinzel', serif;
+}
+
+/* Footer */
+
+nav#footer {
+  background: #311b92;
+  color: #ffffff;
+  padding: 20px 0 15px 0;
+  height: 90px;
+}
+
+nav#footer .fnav {
+  vertical-align: middle;
+}
+
+ul.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav#footer p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#footer i.fa {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #ede7f6;
+  font-size: 20px;
+  padding: 4px 5px;
+  border-radius: 50%;
+  color: #ede7f6;
+  transition: all 0.5s;
+}
+
+#footer i.fa:hover {
+  background: #9575cd;
+  border-color: #9575cd;
   color: #ffffff;
 }

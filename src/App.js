@@ -9,6 +9,7 @@ import Contact from './Components/Contact';
 import ClubDeportivo from './Components/ClubDeportivo';
 import PokemonApp from './Components/PokemonApp';
 import DogApp from './Components/DogApp';
+import Habilidades from './Components/Habilidades';
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Barra />}>
             <Route index element={<Home />}/>
-            <Route path='proyectos' element={<DetailProyect />}/>
+            <Route path='projectos' element={<DetailProyect />}/>
             <Route path='clubdeportivo' element={<ClubDeportivo />}/>
             <Route path='pokemon' element={<PokemonApp />}/>
             <Route path='perros' element={<DogApp />}/>
+            <Route path='habilidades' element={<Habilidades />}/>
+            <Route path='estudios' element={<Studies />}/>
           </Route>
         </Routes>
       </Router>

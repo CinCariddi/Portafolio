@@ -8,9 +8,8 @@
 .datos{
     z-index: 2;
     color: #000000;
-    opacity: 65%;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     max-width: 2000px;
     width: 100vw;
     /* width: 50vw; */
@@ -26,31 +25,10 @@
     transform: scale(1) translateX(0px) translateY(0px);
 } */
 
-.nombre{
-    margin-left: 10%;
-    margin-right: 0%;
-    width: 90%;
-    font-family: monospace;
-    font-size:100px;
-}
-
-.sobreMi{
-    width: 100%;
-    font-family: monospace;
-}
-
-.css-1uwgr7b-MuiTypography-root{
-    font-family: monospace;
-    text-align: right;
-}
 
 .proyecto{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: monospace;
-}
-.a{
-    list-style: none;
 }
