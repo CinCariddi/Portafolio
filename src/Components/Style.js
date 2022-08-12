@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 const colores = {
   50: '#ede7f6',
   100: '#d1c4e9',
@@ -12,5 +14,22 @@ const colores = {
   Black: '#000000',
   White: '#FFFFFF'
 }
-
+ 
+export const Button = styled.div`
+    background-color: #9575cd;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 5vh;
+    display: flex;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive
+`
 export default colores

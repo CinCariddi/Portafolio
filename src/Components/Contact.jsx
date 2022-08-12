@@ -2,10 +2,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import SaveIcon from '@mui/icons-material/Save'
 import '../Style/Contact.css'
 import CV from '../Archivos/CV Cintia.pdf'
 import Perfil from '../Archivos/Profile.pdf'
-import SaveIcon from '@mui/icons-material/Save'
 import styled from 'styled-components';
 
 export default function Contact() {

@@ -4,7 +4,7 @@ import AboutMe from './AboutMe'
 import Footer from './Footer';
 import Habilidades from './Habilidades';
 import Contact from './Contact';
-import styled from 'styled-components';
+import { Button } from "./Style";
 import 'animate.css'
 import '../App.css'
 
@@ -16,9 +16,23 @@ export default function Home() {
             </div>
             <div className='proyecto'>
                 <Projects />
-                <a href='/projectos'>
-                    <Button className='btn'>Ver mas</Button>
-                </a>
+                <div className='botones'>
+                    <div>
+                        <a href='/clubdeportivo'>
+                            <Button className='btn'>Club Deportivo</Button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='/pokemon'>
+                            <Button className='btn'>Poke App</Button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='/perros'>
+                            <Button className='btn'>Dog App</Button>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div>
                 <Habilidades />
@@ -32,21 +46,3 @@ export default function Home() {
         </div>
     );
 }
-
-const Button = styled.div`
-    background-color: #9575cd;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 1%;
-    height: 5vh;
-    display: flex;
-    width: 10vw;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Amatic SC', cursive
-`
