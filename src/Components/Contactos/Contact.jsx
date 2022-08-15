@@ -1,12 +1,11 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import SaveIcon from '@mui/icons-material/Save'
-import '../Style/Contact.css'
-import CV from '../Archivos/CV Cintia.pdf'
-import Perfil from '../Archivos/Profile.pdf'
+import CV from '../../Archivos/CV Cintia.pdf'
+import Perfil from '../../Archivos/Profile.pdf'
 import styled from 'styled-components';
+import mail from '../../Imagenes/Iconos/mail.png'
+import gitbub from '../../Imagenes/Iconos/github.png'
+import linkedin from '../../Imagenes/Iconos/linkedin.png'
+import whatsapp from '../../Imagenes/Iconos/whatsapp.png'
+import './Contact.css'
 
 export default function Contact() {
     return (
@@ -16,38 +15,38 @@ export default function Contact() {
             </div>
             <div className='div2'>
                 <a href='https://github.com/CinCariddi' target='_blank'>
-                    <GitHubIcon  sx={{ color: '#4527a0' }} />
+                    <img src={gitbub}  alt='This is a Image' className='img'/>
                 </a>
                 <p>GitHub</p>
             </div>
             <div className='div3'>
                 <a href='https://www.linkedin.com/in/cintiacariddi/' target='_blank'>
-                    <LinkedInIcon sx={{ color: '#4527a0' }}/>
+                    <img src={linkedin}  alt='This is a Image' className='img'/>
                 </a>
                 <p>LinkedIn</p>
             </div>
             <div className='div4'>
                 <a href='mailto:cintiacariddi@gmail.com'>
-                    <EmailIcon sx={{ color: '#4527a0' }}/>
+                    <img src={mail}  alt='This is a Image' className='img'/>
                 </a>
                 <p>Mail</p>
             </div>
             <div className='div5'>
-                <a href='mailto:cintiacariddi@gmail.com'>
-                    <WhatsAppIcon sx={{ color: '#4527a0' }}/>
+                <a href="https://wa.me/3515100570?text=¡Estoy+interesado!" target='_blank'>
+                    <img src={whatsapp}  alt='This is a Image' className='img'/>
                 </a>
                 <p>WhatsApp</p>
             </div>
             <div className='div6'>
                 <a download='CV' href={CV}>
-                    <Button variant='text' startIcon={<SaveIcon />} className='btn'>
+                    <Button variant='text' className='btn'>
                         Descargar CV
                     </Button>
                 </a>
             </div>
             <div className='div7'>
                 <a download='PerfilLinkeIn' href={Perfil}>
-                    <Button variant='text' startIcon={<SaveIcon />} className='btn'>
+                    <Button variant='text' className='btn'>
                         Descargar Perfil LinkedIn
                     </Button>
                 </a>
@@ -76,9 +75,7 @@ const Parent = styled.div`
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 30vh;
+    height: 40vh;
     align-items: center; 
     justify-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
 `

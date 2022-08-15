@@ -1,0 +1,38 @@
+/* Footer */
+
+nav#footer {
+    background: #311b92;
+    color: #ffffff;
+    height: 15.5vh;
+  }
+  
+  nav#footer .fnav {
+    vertical-align: middle;
+  }
+  
+  ul.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav#footer p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  #footer i.fa {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ede7f6;
+    font-size: 20px;
+    padding: 4px 5px;
+    border-radius: 50%;
+    color: #ede7f6;
+    transition: all 0.5s;
+  }
+  
+  #footer i.fa:hover {
+    background: #9575cd;
+    border-color: #9575cd;
+    color: #ffffff;
+  }

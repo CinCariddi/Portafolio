@@ -1,0 +1,10 @@
+.navBg{
+    background-color: #311b92;
+    color: #FFFFFF;
+    position: sticky !important;
+    top: 0;
+    font-family: 'Amatic SC', cursive;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    height: 15vh;
+  }

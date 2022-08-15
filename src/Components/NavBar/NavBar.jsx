@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Outlet, Link } from 'react-router-dom';
-import Logo from '../Imagenes/Logo.png'
+import { Outlet } from 'react-router-dom';
+import Logo from '../../Imagenes/Logo.png'
+import './NavBar.css'
 
 export default function Barra() {
   return (
@@ -17,7 +17,6 @@ export default function Barra() {
                         <Nav.Link href="/">Inicio</Nav.Link>
                         <Nav.Link href="#proyecto">Proyectos</Nav.Link>
                         <Nav.Link href="#habilidades">Habilidades</Nav.Link>
-                        <Nav.Link href="#estudios">Estudios</Nav.Link>
                         <Nav.Link href="#contactos">Contacto</Nav.Link>
                         {/* <NavDropdown title="Proyectos" id="basic-nav-dropdown">
                             <NavDropdown.Item as={Link} to='/clubdeportivo'>Club Deportivo</NavDropdown.Item>

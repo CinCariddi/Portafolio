@@ -1,26 +1,11 @@
-// import ClubDeportivo from "./ClubDeportivo";
-// import DogApp from "./DogApp";
-// import PokemonApp from "./PokemonApp";
-
-// export default function DetailProyect(){
-//     return(
-//         <div>
-//             <ClubDeportivo />
-//             <PokemonApp />
-//             <DogApp />
-//         </div>
-//     )
-// }
-
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from '../Imagenes/club.png'
-import projImg2 from '../Imagenes/pokemon.jpg'
-import projImg3 from '../Imagenes/perro.jpg'
-import colorSharp2 from "../Imagenes/color-sharp2.png";
+import projImg1 from '../../Imagenes/club.png'
+import projImg2 from '../../Imagenes/pokemon.jpg'
+import projImg3 from '../../Imagenes/perro.jpg'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import '../Style/DetailProject.css'
+import './DetailProject.css'
 
 export default function DetailProyect () {
 

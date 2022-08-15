@@ -98,6 +98,7 @@
     transition: 0.5s ease-in-out;
     opacity: 0;
     width: 100%;
+    color: black !important;
   }
   .proj-imgbx:hover .proj-txtx {
     top: 50%;
@@ -193,4 +194,15 @@
   }
   .contact form button:hover::before {
     width: 100%;
+  }
+
+  .withoutDefaultClasses{
+    text-decoration: none;
+  }
+
+  .imgProyecto{
+    height: 40vh;
+    width: 30vw;
+    margin: 0px auto;
+    display:block;
   }

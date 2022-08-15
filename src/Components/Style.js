@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const colores = {
+export const colores = {
   50: '#ede7f6',
   100: '#d1c4e9',
   200: '#b39ddb',
@@ -22,7 +22,7 @@ export const Button = styled.div`
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     display: inline-block;
     font-size: 16px;
     height: 5vh;
@@ -32,4 +32,26 @@ export const Button = styled.div`
     justify-content: center;
     font-family: 'Amatic SC', cursive
 `
-export default colores
+export const Contenedor = styled.div`
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+`
+
+export const Contenido = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+`
+export const ContenidoInterno = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+`

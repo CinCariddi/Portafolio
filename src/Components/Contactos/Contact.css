@@ -10,3 +10,9 @@
 .div5 { grid-area: 2 / 4 / 3 / 5; }
 .div6 { grid-area: 3 / 1 / 4 / 3; }
 .div7 { grid-area: 3 / 3 / 4 / 5; }
+
+.img{
+    border: 2px solid #9575cd;
+    border-radius: 50%;
+    background: #9575cd;
+}
