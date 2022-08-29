@@ -1,5 +1,10 @@
 import { Button, Contenedor, Contenido, ContenidoInterno } from "../Style";
 import Carousel from 'react-bootstrap/Carousel';
+import landing from '../../Imagenes/pokemon.jpg'
+import home from '../../Imagenes/PokemonApp/home.jpg'
+import espera from '../../Imagenes/PokemonApp/espera.jpg'
+import detalle from '../../Imagenes/PokemonApp/detalle.jpg'
+import creacion from '../../Imagenes/PokemonApp/creacion.jpg'
 
 const TextToTheRight = () => {
     return (
@@ -19,7 +24,7 @@ const TextToTheRight = () => {
                 </ContenidoInterno>
             </div>
             <div>
-                <img src='' alt='This is an image' height='250vh'/>
+                <img src={landing} alt='This is an image' height='250vh'/>
             </div>
         </Contenido>
     )
@@ -29,7 +34,7 @@ const TextToTheLeft = () =>{
     return (
         <Contenido>
             <div>
-                <img src='' alt='This is an image' height='250vh'/>
+                <img src={home} alt='This is an image' height='250vh'/>
             </div>
             <div>
                 <ContenidoInterno>
@@ -70,57 +75,47 @@ export default function PokemonApp() {
                     <Carousel.Item interval={1000}>
                         <img
                             className="d-block carusel"
-                            src=''
+                            src={detalle}
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h2>Seccion de deportes</h2>
+                            <h2>Ruta de detalle</h2>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={500}>
                         <img
                         className="d-block carusel"
-                        src=''
+                        src={creacion}
                         alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h2>Ruta de deporte</h2>
+                            <h2>Ruta de creacion</h2>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block carusel"
-                        src=''
+                        src={espera}
                         alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <h2>Panel de Administrador</h2>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block carusel"
-                        src=''
-                        alt="Four slide"
-                        />
-                        <Carousel.Caption>
-                            <h2>Ruta de registro</h2>
+                            <h2>pagina de carga</h2>
                         </Carousel.Caption>
                     </Carousel.Item>
             </Carousel>
             <div className='botones'>
-                    <Button className="btn">
+                    {/* <Button className="btn">
                         <a href="" target='_blank'>
                         Video del Proyecto
                         </a>
-                    </Button>
+                    </Button> */}
                     <Button className="btn">
-                        <a href="" target='_blank'>
+                        <a href="https://pi-pokemon-livid.vercel.app/" target='_blank' className='withoutDefaultClasses links'>
                             Proyecto deployado
                         </a>
                     </Button>
                     <Button className="btn">
-                        <a href="" target='_blank'>
+                        <a href="https://github.com/CinCariddi/PI-Pokemon" target='_blank' className='withoutDefaultClasses links'>
                             Repositorio
                         </a>
                     </Button>

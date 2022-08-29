@@ -5,6 +5,9 @@ import Barra from './Components/NavBar/NavBar';
 import ClubDeportivo from './Components/Proyectos/ClubDeportivo';
 import PokemonApp from './Components/Proyectos/PokemonApp';
 import DogApp from './Components/Proyectos/DogApp';
+import Project from './Components/Proyectos/Projects';
+import Habilidades from './Components/Skills/Habilidades';
+import Contact from './Components/Contactos/Contact';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path='/' element={<Barra />}>
             <Route index element={<Home />}/>
             <Route path='clubdeportivo' element={<ClubDeportivo />}/>
+            <Route path='proyectos' element={<Project />}/>
+            <Route path='habilidades' element={<Habilidades />}/>
+            <Route path='contactos' element={<Contact />}/>
             <Route path='pokemon' element={<PokemonApp />}/>
             <Route path='perros' element={<DogApp />}/>
           </Route>

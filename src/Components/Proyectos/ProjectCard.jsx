@@ -9,7 +9,7 @@ const urls = {
 
 export const ProjectCard = ({ title, subtitle, description, imgUrl }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={6} md={6}>
       <div className="proj-imgbx" >
         <img src={imgUrl} className='imgProyecto'/>
         <a className="proj-txtx withoutDefaultClasses" target='_blank' href={urls[title]}>

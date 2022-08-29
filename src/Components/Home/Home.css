@@ -39,3 +39,9 @@
     align-items: center;
     width: 50vw;
 }
+
+.row {
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+}

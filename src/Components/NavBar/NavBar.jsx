@@ -14,8 +14,8 @@ export default function Barra() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Inicio</Nav.Link>
-                        <Nav.Link href="#proyecto">Proyectos</Nav.Link>
+                        <Nav.Link href="#home">Inicio</Nav.Link>
+                        <Nav.Link href="#project">Proyectos</Nav.Link>
                         <Nav.Link href="#habilidades">Habilidades</Nav.Link>
                         <Nav.Link href="#contactos">Contacto</Nav.Link>
                         {/* <NavDropdown title="Proyectos" id="basic-nav-dropdown">

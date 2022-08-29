@@ -9,7 +9,7 @@ import './Contact.css'
 
 export default function Contact() {
     return (
-        <Parent>
+        <Parent id='contactos'>
             <div className='div1'>
                 <h2>Contactame</h2>
             </div>
@@ -75,7 +75,7 @@ const Parent = styled.div`
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 40vh;
+    height: 60vh;
     align-items: center; 
     justify-items: center;
 `

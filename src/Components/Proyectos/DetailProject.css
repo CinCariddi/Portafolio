@@ -7,6 +7,8 @@
       font-size: 45px;
       font-weight: 700;
     text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
   }
   .project p {
     color: #311b92;
@@ -201,8 +203,13 @@
   }
 
   .imgProyecto{
-    height: 40vh;
-    width: 30vw;
-    margin: 0px auto;
+    height: 45vh;
+    width: 40vw;
+    margin: 0px auto !important;
     display:block;
+  }
+
+  .cardProyecto{
+    width: 80vw;
+    margin-left: -5vw !important;
   }

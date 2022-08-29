@@ -49,7 +49,7 @@ export default function Habilidades() {
     ]
 
     return (
-        <Container  className="skill">
+        <Container  className="skill" id='habilidades'>
             <h2>Skills</h2>
             <Row>
                 {
