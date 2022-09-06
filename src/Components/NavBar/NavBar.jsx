@@ -13,7 +13,7 @@ export default function Barra() {
                 <Navbar.Brand href='/'><img src={Logo}/>Cintia Cariddi</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" style={{margin: "0px !important"}}>
                         <Nav.Link href="#home">Inicio</Nav.Link>
                         <Nav.Link href="#project">Proyectos</Nav.Link>
                         <Nav.Link href="#habilidades">Habilidades</Nav.Link>

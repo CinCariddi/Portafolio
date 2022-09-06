@@ -8,3 +8,10 @@
     z-index: 2;
     height: 15vh;
   }
+
+  .me-auto{
+    background-color: #311b92;
+    width: fit-content;
+    padding: 10px !important;
+    border-radius: 5px;
+  }

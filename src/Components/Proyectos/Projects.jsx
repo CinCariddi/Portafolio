@@ -33,17 +33,17 @@ export default function Project () {
 
   return (
     <section className="project" id="project">
-      <Container>
+      {/* <Container> */}
         <Row>
           <Col size={12}>
+            <h2>Proyectos</h2>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn animate__repeat-1": ""}>
-                <h2>Proyectos</h2>
+              <div className={`${isVisible ? "animate__animated animate__fadeIn animate__repeat-1": ""} projectAnimation`}>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row className='cardProyecto'>
+                      <div className='cardProyecto'>
                         {
                           projects.map((project, index) => {
                             return (
@@ -54,7 +54,7 @@ export default function Project () {
                             )
                           })
                         }
-                      </Row>
+                      </div>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -62,7 +62,7 @@ export default function Project () {
             </TrackVisibility>
           </Col>
         </Row>
-      </Container>
+      {/* </Container> */}
     </section>
   )
 }

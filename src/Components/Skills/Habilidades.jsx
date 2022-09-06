@@ -51,7 +51,7 @@ export default function Habilidades() {
     return (
         <Container  className="skill" id='habilidades'>
             <h2>Skills</h2>
-            <Row>
+            <div className="skillList">
                 {
                     skills.map((skill, index) => {
                         return (
@@ -62,7 +62,7 @@ export default function Habilidades() {
                         )
                     })
                 }
-            </Row>
+            </div>
         </Container>
     )
 }
