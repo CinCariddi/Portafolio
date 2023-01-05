@@ -30,7 +30,8 @@ export const Button = styled.div`
     width: 10vw;
     align-items: center;
     justify-content: center;
-    font-family: 'Amatic SC', cursive
+    font-family: 'Amatic SC', cursive;
+    margin:10px
 `
 export const Contenedor = styled.div`
   margin: 3%;
@@ -46,8 +47,6 @@ export const Contenido = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
 `
 export const ContenidoInterno = styled.div`
   display: flex;

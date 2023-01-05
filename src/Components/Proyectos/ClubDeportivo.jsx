@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { Button, Contenedor, Contenido, ContenidoInterno, Div } from "../Style";
+import { Button, Contenedor, ContenidoInterno} from "../Style";
 import landing from '../../Imagenes/club.png'
 import home from '../../Imagenes/ClubDeportivo/home.jpg'
 import actividades from '../../Imagenes/ClubDeportivo/actividades.jpeg'
@@ -7,64 +7,63 @@ import deporte from '../../Imagenes/ClubDeportivo/futbol.jpeg'
 import panel from '../../Imagenes/ClubDeportivo/panel.jpeg'
 import registro from '../../Imagenes/ClubDeportivo/registro.jpeg'
 import './ClubDeportivo.css'
-import { Row } from 'react-bootstrap';
 
 
 const TextToTheRight = () =>{
     return (
-        <Contenido>
-            <div>
+        <div className="contenido">
+            <div className="home2">
                 <ContenidoInterno>
-                    <Row>
-                        <div>
+                    <div>
+                        <div className="in-flex">
                             <h1>
                                 Pagina de carga
                             </h1>
                         </div>
-                        <div>
+                        <div className="in-flex">
                             <p>
                                 En la pagina inicial nos encontramos con el Logo del Club, y ademas con dos botones, los cuales uno es para registrarnos al club y otro para ingresar a la pagina como invitado.
                             </p>
                         </div>
-                        <div>
+                        <div className="in-flex">
                             <p>
                                 <i>Cuando se ingresa como invitado, hay muchas funciones que le quedan restringidas.</i>
                             </p>
                         </div>
-                    </Row>
+                    </div>
                 </ContenidoInterno>
             </div>
             <div>
-                <img src={landing} alt='This is an image' height='250vh'/>
+                <img src={landing} alt='This is an image' className="imgProyecto2"/>
             </div>
-        </Contenido>
+        </div>
     )
 }
 const TextToTheLeft = () =>{
     return (
-        <Contenido>
+        <div className="contenido">
             <div>
-                <img src={home} alt='This is an image' height='250vh'/>
+                <img src={home} alt='This is an image' className="imgProyecto2 img2"/>
             </div>
-            <div>
+            <div className="home2">
                 <ContenidoInterno>
-                    <div className='textoDerecha'>
+                    <div className='in-flex'>
                         <div>
                             <h1>
                                 Pagina inicial
                             </h1>
                         </div>
-                        <div className='textoDerecha'>
+                        <div className='in-flex'>
                             <p>
                                 Al iniciar sesion como invitado, se ingresa al home del club, que cuenta con barra de navegacion con diferentes componentes, los cuales son: Inicio, Actividades, Noticias, Galeria, Calendario y Contacto.
                             </p>
                         </div>
-                        <div className='textoDerecha'>
+                        <div className='in-flex'>
                             <p>
                                 Abajo de la barra de navegacion se encuentran tres secciones: un carusel de imagenes, las actividades y las ultimas noticias del club.
                             </p>
                         </div>
-                        <div>
+                        <div className="in-flex">
                             <p>
                                 Para concluir, al final de la pagina se encuentra el footer.
                             </p>
@@ -72,7 +71,7 @@ const TextToTheLeft = () =>{
                     </div>
                 </ContenidoInterno>
             </div>
-        </Contenido>
+        </div>
     )
 }
 
@@ -127,12 +126,12 @@ export default function ClubDeportivo() {
             <div className='botones'>
                     <Button>
                         <a href="https://www.youtube.com/watch?v=JbprzCdvUo8&t=2s&ab_channel=LucasCencig" target='_blank' className='withoutDefaultClasses links'>
-                            Video del Proyecto
+                            Video
                         </a>
                     </Button>
                     <Button>
                         <a href="https://club-henry.vercel.app/" target='_blank' className='withoutDefaultClasses links'>
-                            Proyecto deployado
+                            Proyecto
                         </a>
                     </Button>
                     <Button>
