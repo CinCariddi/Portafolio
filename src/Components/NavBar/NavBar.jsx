@@ -18,11 +18,6 @@ export default function Barra() {
                         <Nav.Link href="#project">Proyectos</Nav.Link>
                         <Nav.Link href="#habilidades">Habilidades</Nav.Link>
                         <Nav.Link href="#contactos">Contacto</Nav.Link>
-                        {/* <NavDropdown title="Proyectos" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} to='/clubdeportivo'>Club Deportivo</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to='/pokemon'>Pokemon App</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to='/perros'>Dog App</NavDropdown.Item>
-                        </NavDropdown> */}
                     </Nav>}
                 </Navbar.Collapse>
             </Container>

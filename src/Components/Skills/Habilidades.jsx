@@ -1,64 +1,89 @@
 import './Habilidades.css'
-import js from '../../Imagenes/Skills/js.png'
-import html from '../../Imagenes/Skills/html.png'
-import css from '../../Imagenes/Skills/css.png'
-import reactt from '../../Imagenes/Skills/react.png'
-import redux from '../../Imagenes/Skills/redux.png'
-import nodejs from '../../Imagenes/Skills/nodejs.png'
-import bt from '../../Imagenes/Skills/bt.png'
-import git from '../../Imagenes/Skills/git.png'
-import { SkillCard } from "./SkillCard"
-import { Container, Row } from "react-bootstrap"
-import 'animate.css'
+import { MdJavascript, MdHtml, MdOutlineCss } from "react-icons/md";
+import { FaReact, FaNode, FaBootstrap, FaGit, FaFigma, FaTrello } from "react-icons/fa";
+import { SiRedux, SiTypescript, SiMongodb, SiTailwindcss, SiNotion } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { DiPostgresql } from "react-icons/di";
+import { Container } from "react-bootstrap"
 
 export default function Habilidades() {
-
     const skills = [
         {
-            name: '',
-            img: js
+            name: 'HTML',
+            img: <MdHtml className='imgSkill'/>
         },
         {
-            name: '',
-            img: html
+            name: 'CSS',
+            img: <MdOutlineCss className='imgSkill'/>
         },
         {
-            name: '',
-            img: css
+            name: 'JavaScript',
+            img: <MdJavascript className='imgSkill'/>
         },
         {
-            name: '',
-            img: reactt
+            name: 'NodeJs',
+            img: <FaNode className='imgSkill'/>
         },
         {
-            name: '',
-            img: redux
+            name: 'TypeScript',
+            img: <SiTypescript className='imgSkill'/>
         },
         {
-            name: '',
-            img: nodejs
+            name: 'ReactJs',
+            img: <FaReact className='imgSkill'/>
         },
         {
-            name: '',
-            img: bt
+            name: 'NextJs',
+            img: <RiNextjsFill className='imgSkill'/>
         },
         {
-            name: '',
-            img: git
+            name: 'Redux',
+            img: <SiRedux className='imgSkill'/>
+        },
+        {
+            name: 'Tailwind',
+            img: <SiTailwindcss className='imgSkill'/>
+        },
+        {
+            name: 'Bootstrap',
+            img: <FaBootstrap className='imgSkill'/>
+        },
+        {
+            name: 'MongoDb',
+            img: <SiMongodb className='imgSkill'/>
+        },
+        {
+            name: 'PostgresSQL',
+            img: <DiPostgresql className='imgSkill'/>
+        },
+        {
+            name: 'Figma',
+            img: <FaFigma className='imgSkill'/>
+        },
+        {
+            name: 'Git',
+            img: <FaGit className='imgSkill'/>
+        },
+        {
+            name: 'Trello',
+            img: <FaTrello className='imgSkill'/>
+        },
+        {
+            name: 'Notion',
+            img: <SiNotion className='imgSkill'/>
         },
     ]
 
     return (
-        <Container  className="skill" id='habilidades'>
+        <Container  className="skills" id='habilidades'>
             <h2>Skills</h2>
             <div className="skillList">
                 {
-                    skills.map((skill, index) => {
+                    skills.map((skill) => {
                         return (
-                            <SkillCard
-                                key={index}
-                                {...skill}
-                            />
+                            <div title={skill.name} className='skill'>
+                                {skill.img}
+                            </div>
                         )
                     })
                 }

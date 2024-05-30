@@ -1,4 +1,4 @@
-import CV from '../../Archivos/CV Cintia.pdf'
+import CV from '../../Archivos/CVCintiaCariddi.pdf'
 import Perfil from '../../Archivos/Profile.pdf'
 import styled from 'styled-components';
 import mail from '../../Imagenes/Iconos/mail.png'
