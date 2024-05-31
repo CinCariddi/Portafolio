@@ -4,7 +4,6 @@ import AboutMe from '../AboutMe/AboutMe'
 import Footer from '../Footer/Footer';
 import Habilidades from '../Skills/Habilidades';
 import Contact from '../Contactos/Contact';
-import { Button } from "../Style";
 import 'animate.css'
 import '../../App.css'
 

@@ -11,27 +11,10 @@
     align-items: center;
     height: 80vh;
     max-width: 2000px;
-    /* width: 100vw; */
-    /* width: 50vw; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* transform: scale(2) translateX(2px) translateY(1px);
-    transition: all 0.5s ease-out */
 }
-
-/* .datos:active{
-    width: 50vw;
-    transform: scale(1) translateX(0px) translateY(0px);
-} */
-
-
-/* .proyecto{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .botones{
     display: flex;

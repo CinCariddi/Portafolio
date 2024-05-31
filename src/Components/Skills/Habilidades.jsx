@@ -75,7 +75,7 @@ export default function Habilidades() {
     ]
 
     return (
-        <Container  className="skills" id='habilidades'>
+        <Container  className="skills">
             <h2>Skills</h2>
             <div className="skillList">
                 {

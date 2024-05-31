@@ -1,145 +1,90 @@
-import Carousel from 'react-bootstrap/Carousel';
-import { Button, Contenedor, ContenidoInterno} from "../Style";
+import { DetailProject } from "./DetailProyect";
+import './DetailProject.css'
 import landing from '../../Imagenes/club.png'
 import home from '../../Imagenes/ClubDeportivo/home.jpg'
 import actividades from '../../Imagenes/ClubDeportivo/actividades.jpeg'
 import deporte from '../../Imagenes/ClubDeportivo/futbol.jpeg'
 import panel from '../../Imagenes/ClubDeportivo/panel.jpeg'
 import registro from '../../Imagenes/ClubDeportivo/registro.jpeg'
-import './ClubDeportivo.css'
-
-
-const TextToTheRight = () =>{
-    return (
-        <div className="contenido">
-            <div className="home2">
-                <ContenidoInterno>
-                    <div>
-                        <div className="in-flex">
-                            <h1>
-                                Pagina de carga
-                            </h1>
-                        </div>
-                        <div className="in-flex">
-                            <p>
-                                En la pagina inicial nos encontramos con el Logo del Club, y ademas con dos botones, los cuales uno es para registrarnos al club y otro para ingresar a la pagina como invitado.
-                            </p>
-                        </div>
-                        <div className="in-flex">
-                            <p>
-                                <i>Cuando se ingresa como invitado, hay muchas funciones que le quedan restringidas.</i>
-                            </p>
-                        </div>
-                    </div>
-                </ContenidoInterno>
-            </div>
-            <div>
-                <img src={landing} alt='This is an image' className="imgProyecto2"/>
-            </div>
-        </div>
-    )
-}
-const TextToTheLeft = () =>{
-    return (
-        <div className="contenido">
-            <div>
-                <img src={home} alt='This is an image' className="imgProyecto2 img2"/>
-            </div>
-            <div className="home2">
-                <ContenidoInterno>
-                    <div className='in-flex'>
-                        <div>
-                            <h1>
-                                Pagina inicial
-                            </h1>
-                        </div>
-                        <div className='in-flex'>
-                            <p>
-                                Al iniciar sesion como invitado, se ingresa al home del club, que cuenta con barra de navegacion con diferentes componentes, los cuales son: Inicio, Actividades, Noticias, Galeria, Calendario y Contacto.
-                            </p>
-                        </div>
-                        <div className='in-flex'>
-                            <p>
-                                Abajo de la barra de navegacion se encuentran tres secciones: un carusel de imagenes, las actividades y las ultimas noticias del club.
-                            </p>
-                        </div>
-                        <div className="in-flex">
-                            <p>
-                                Para concluir, al final de la pagina se encuentra el footer.
-                            </p>
-                        </div>
-                    </div>
-                </ContenidoInterno>
-            </div>
-        </div>
-    )
-}
 
 export default function ClubDeportivo() {
     return (
-        <Contenedor>
-            <h2>Club Deportivo</h2>
-            <TextToTheRight />
-            <TextToTheLeft />
-            <Carousel>
-                    <Carousel.Item interval={1000}>
-                        <img
-                            className="d-block carusel"
-                            src={actividades}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h2>Seccion de deportes</h2>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item interval={500}>
-                        <img
-                        className="d-block carusel"
-                        src={deporte}
-                        alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                            <h2>Ruta de deporte</h2>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block carusel"
-                        src={panel}
-                        alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                            <h2>Panel de Administrador</h2>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block carusel"
-                        src={registro}
-                        alt="Four slide"
-                        />
-                        <Carousel.Caption>
-                            <h2>Ruta de registro</h2>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-            </Carousel>
-            <div className='botones'>
-                    <Button>
+        <DetailProject title={"Club deportivo"} link={"https://club-henry.vercel.app/"}
+            content={
+                <div className='web-container'>
+                    <div className='web-img-container'>
+                        <div className='web-img'>
+                            <img src={landing} alt="Image not found" className='web-img-top-right'/>
+                            <img src={home} alt="Image not found" className='web-img-top-left'/>
+                        </div>
+                        <div className='web-img'>
+                            <img src={registro} alt="Image not found" className='web-img-bottom-right'/>
+                            <img src={panel} alt="Image not found" className='web-img-bottom-left'/>
+                        </div>
+                        <div className='web-img'>
+                            <img src={actividades} alt="Image not found" className='web-img-top-right'/>
+                            <img src={deporte} alt="Image not found" className='web-img-top-left'/>
+                        </div>
+                    </div>
+                    <div className='web-text-container'>
+                        <h2>
+                            Accesos y Perfiles Personalizados
+                        </h2>
+                        <span>
+                            En la pagina principal, encontraras el logo del club y dos botones destacados: uno para registrarte como miembro del club y otro para acceder como invitado.
+                        </span>
+                        <ul>
+                            <li>
+                                Invitados: Pueden explorar la pagina con funciones limitadas. Al iniciar sesión como invitado, se accede a la pagina de inicio del club.
+                            </li>
+                            <li>
+                                Socios y Administradores: Tienen acceso a paneles personalizados y perfiles donde pueden gestionar diversas actividades y comunicaciones dentro del club.
+                            </li>
+                        </ul>
+                        <h2>
+                            Navegacion Intuitiva
+                        </h2>
+                        <span>
+                            La pagina de inicio cuenta con una barra de navegacion que facilita el acceso a diferentes secciones del sitio:
+                        </span>
+                        <div className='web-text-list'>
+                            <ul>
+                                <li>Inicio</li>
+                                <li>Actividades</li>
+                                <li>Noticias</li>
+                            </ul>
+                            <ul>
+                                <li>Galería</li>
+                                <li>Calendario</li>
+                                <li>Contacto</li>
+                            </ul>
+                        </div>
+                        <h2>
+                            Contenido Dinamico
+                        </h2>
+                        <span>
+                            Bajo la barra de navegación, se presentan tres secciones clave:
+                        </span>
+                        <ul>
+                            <li>
+                                Carrusel de Imágenes: Destacando eventos y momentos importantes del club.
+                            </li>
+                            <li>
+                                Actividades: Informacion sobre las actividades y programas disponibles.
+                            </li>
+                            <li>
+                                Ultimas Noticias: Mantente informado sobre las novedades y eventos recientes del club.
+                            </li>
+                        </ul>
+                        <span>
+                            Nuestra plataforma esta creada para ofrecer una experiencia enriquecedora y eficiente, asegurando que tanto los usuarios como los administradores puedan interactuar y disfrutar de todas las funcionalidades del club. 
+                        </span>
                         <a href="https://www.youtube.com/watch?v=JbprzCdvUo8&t=2s&ab_channel=LucasCencig" target='_blank' className='withoutDefaultClasses links'>
-                            Video
+                            Video del proyecto
                         </a>
-                    </Button>
-                    <Button>
-                        <a href="https://club-henry.vercel.app/" target='_blank' className='withoutDefaultClasses links'>
-                            Proyecto
-                        </a>
-                    </Button>
-                    <Button>
-                        <a href='https://github.com/matias183/FrontHenryClub' target='_blank' className='withoutDefaultClasses links'>
-                            Repositorio
-                        </a>
-                    </Button>
-            </div>
-        </Contenedor>
+                    </div>
+                </div>
+            }
+        />
     )
 }

@@ -1,130 +1,53 @@
-import { Button, Contenedor, Contenido, ContenidoInterno } from "../Style";
-import Carousel from 'react-bootstrap/Carousel';
-import landing from '../../Imagenes/pokemon.jpg'
+import { DetailProject } from "./DetailProyect";
+import './DetailProject.css'
 import home from '../../Imagenes/PokemonApp/home.jpg'
 import espera from '../../Imagenes/PokemonApp/espera.jpg'
 import detalle from '../../Imagenes/PokemonApp/detalle.jpg'
 import creacion from '../../Imagenes/PokemonApp/creacion.jpg'
-import './Proyects.css'
-
-const TextToTheRight = () => {
-    return (
-        <div className="contenido">
-            <div className="home2">
-                <ContenidoInterno>
-                    <div className="in-flex">
-                        <h1>
-                            Pagina de carga
-                        </h1>
-                    </div>
-                    <div className="in-flex">
-                        <p>
-                            En la pagina inicial nos encontramos con una imagen de fondo y un boton para ingresar a la pagina.
-                        </p>
-                    </div>
-                </ContenidoInterno>
-            </div>
-            <div>
-                <img src={landing} alt='This is an image' className="imgProyecto2"/>
-            </div>
-        </div>
-    )
-}
-
-const TextToTheLeft = () =>{
-    return (
-        <div className="contenido">
-            <div>
-                <img src={home} alt='This is an image' className="imgProyecto2 img2"/>
-            </div>
-            <div className="home2">
-                <ContenidoInterno>
-                    <div className="in-flex">
-                        <h1>
-                            Pagina inicial
-                        </h1>
-                    </div>
-                    <div className="in-flex">
-                        <p>
-                            Al iniciar sesion como invitado, se ingresa al home del club, que cuenta con barra de navegacion con diferentes componentes, los cuales son: Inicio, Actividades, Noticias, Galeria, Calendario y Contacto.
-                        </p>
-                    </div>
-                    <div className="in-flex">
-                        <p>
-                            Abajo de la barra de navegacion se encuentran tres secciones: un carusel de imagenes, las actividades y las ultimas noticias del club.
-                        </p>
-                    </div>
-                    <div className="in-flex">
-                        <p>
-                            Para concluir, al final de la pagina se encuentra el footer.
-                        </p>
-                    </div>
-                </ContenidoInterno>
-            </div>
-        </div>
-    )
-}
-
 
 export default function PokemonApp() {
     return (
-        <Contenedor>
-            <h2>App Pokemon</h2>
-            <div>
-                <TextToTheRight />
-            </div>
-                <TextToTheLeft />
-            <div className="carusel">
-                <Carousel>
-                        <Carousel.Item interval={1000}>
-                            <img
-                                className="d-block carusel"
-                                src={detalle}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h2>Ruta de detalle</h2>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={500}>
-                            <img
-                            className="d-block carusel"
-                            src={creacion}
-                            alt="Second slide"
-                            />
-                            <Carousel.Caption>
-                                <h2>Ruta de creacion</h2>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block carusel"
-                            src={espera}
-                            alt="Third slide"
-                            />
-                            <Carousel.Caption>
-                                <h2>pagina de carga</h2>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                </Carousel>
-            </div>
-            <div className='botones'>
-                    {/* <Button className="btn">
-                        <a href="" target='_blank'>
-                        Video del Proyecto
-                        </a>
-                    </Button> */}
-                    <Button className="btn">
-                        <a href="https://pi-pokemon-livid.vercel.app/" target='_blank' className='withoutDefaultClasses links'>
-                            Proyecto
-                        </a>
-                    </Button>
-                    <Button className="btn">
-                        <a href="https://github.com/CinCariddi/PI-Pokemon" target='_blank' className='withoutDefaultClasses links'>
-                            Repositorio
-                        </a>
-                    </Button>
-            </div>
-        </Contenedor>
+        <DetailProject title={"Pokemon App"} link={"https://pi-pokemon-livid.vercel.app/"}
+            content={
+                <div className="web-container">
+                    <div className='web-img-container'>
+                        <div className='web-img'>
+                            <img src={home} alt="Image not found" className='web-img-top-right'/>
+                            <img src={espera} alt="Image not found" className='web-img-top-left'/>
+                        </div>
+                        <div className='web-img'>
+                            <img src={detalle} alt="Image not found" className='web-img-bottom-right'/>
+                            <img src={creacion} alt="Image not found" className='web-img-bottom-left'/>
+                        </div>
+                    </div>
+                    <div className='web-text-container'>
+                        <h2>Pokemon</h2>
+                        <span>
+                            En la página inicial, te damos la bienvenida con una imagen de fondo llamativa y un botón destacado para ingresar al sitio.
+                        </span>
+                        <h2>
+                            Funcionalidades de la Página de Inicio
+                        </h2>
+                        <ul>
+                            <li>
+                                Filtros de Búsqueda: Encuentra fácilmente los Pokémon que buscas utilizando filtros por tipo y por creador. Además, puedes ordenar la lista alfabéticamente o por nivel de ataque.
+                            </li>
+                            <li>
+                                Listado Completo: Accede al listado completo de todos los Pokémon disponibles.
+                            </li>
+                            <li>
+                                Creación de Pokémon: Un botón intuitivo te permite crear nuevos Pokémon de manera sencilla.
+                            </li>
+                            <li>
+                                Detalles de Pokémon: Al hacer clic en cualquier Pokémon del listado, serás dirigido a una página con información detallada sobre ese Pokémon específico.
+                            </li>
+                        </ul>
+                        <span>
+                            Explora, crea y descubre todo sobre tus Pokémon favoritos de manera fácil y rápida.
+                        </span>
+                    </div>
+                </div>
+            }
+        />
     )
 }
