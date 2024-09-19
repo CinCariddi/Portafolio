@@ -1,0 +1,59 @@
+.content-switch {
+    position: relative;
+    width: 4.5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid darkviolet;
+    border-radius: 25px;
+}
+
+.btn-switch-dark,
+.btn-switch-light {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-switch-image-dark, 
+.btn-switch-image-light {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn-switch-light {
+    position: absolute;
+    right: 0px;
+}
+
+.btn-switch-dark {
+    position: absolute;
+    left: 0px;
+}
+
+@media (max-width: 710px) {
+    .content-switch {
+        width: 3.5rem;
+        height: 1.5rem;
+    }
+    .btn-switch-dark,
+    .btn-switch-light {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .btn-switch-image-dark, 
+    .btn-switch-image-light {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

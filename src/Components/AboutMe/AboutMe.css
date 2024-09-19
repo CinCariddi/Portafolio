@@ -1,0 +1,39 @@
+.content-about-me {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-me-title {
+    width: 50%;
+}
+
+.about-me-title h2 {
+    font-size: large;
+    height: 30px;
+}
+
+.about-me-img-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-img {
+    width: auto;
+    height: 450px;
+}
+
+@media (max-width: 710px) {
+    .content-about-me {
+        margin: 2rem;
+        flex-direction: column;
+    }
+    .about-me-title {
+        width: 100%;
+    }
+    .about-me-img {
+        height: 350px;
+    }
+}

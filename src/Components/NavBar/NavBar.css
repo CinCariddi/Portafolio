@@ -1,0 +1,233 @@
+.content-navBar {
+    z-index: 10;
+    font-family: 'Playpen Sans';
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    right: 0;
+    min-width: 100vw;
+    height: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.light-navBar {
+    background-color: #FFFFFF;
+    color: #0C0A14;
+
+    .navBar-ul-li:hover {
+        .navBar-ul-a {
+            color: #D1C6F3;
+            text-shadow: none;
+        }
+    
+        .line {
+            height: 0.2rem;
+            width: 100%;
+            margin-top: 5px;
+            background-color: #D1C6F3;
+        }
+    }
+    .icon {
+        background-color: #FFFFFF;
+    }
+    .icon .line {
+        background-color: #291F43;
+    }
+    .navBar-ul-li-a-min {
+        color: #0C0A14;
+    }
+    .navBar-ul-li-a-min {
+        background-color: #291F43;
+        color: #D1C6F3;
+    }
+}
+
+.dark-navBar {
+    background-color: #0C0A14;
+    color: #FFFFFF;
+
+    .navBar-ul-li:hover {
+        .navBar-ul-a {
+            color: #D1C6F3;
+            text-shadow: none;
+        }
+        .line {
+            height: 0.2rem;
+            width: 100%;
+            margin-top: 5px;
+            background-color: #D1C6F3;
+        }
+    }
+    .icon {
+        background-color: #0C0A14;
+    }
+    .icon .line {
+        background-color: #D1C6F3;
+    }
+    .navBar-ul-li-a-min {
+        color: #FFFFFF;
+    }
+    .navBar-ul-li-a-min {
+        background-color: #D1C6F3;
+        color: #291F43;
+    }
+}
+
+
+.content-title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content-navBar h2 {
+    margin: 15px 0 15px 20px;
+    font-size: x-large;
+    margin-right: 10px;
+    text-wrap: nowrap;
+}
+
+.navBar {
+    margin: 10px 0 10px 20px;
+}
+  
+.navBar-ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    position: absolute;
+    right: 0;
+    font-size: larger;
+}
+  
+.navBar-ul-li {
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.navBar-ul-a, 
+.line {
+    transition: all 0.5s;
+}
+  
+.navBar-min {
+    position: relative;
+}
+  
+.navBar-min ul {
+    display: flex;
+    padding-top: 60px;
+    width: 0;
+    transition: width 0.6s linear;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: medium;
+}
+  
+.navBar-min.active ul {
+    width: 40%;
+}
+  
+.navBar-min ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+}
+  
+.navBar-min.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+  
+.navBar-ul-li-a-min {
+    text-decoration: none;
+    margin: 0 10px;
+    width: 95px;
+    display: flex;
+    padding: 5px;
+}
+  
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    bottom: 15px;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+}
+  
+.icon:focus {
+    outline: 0;
+}
+  
+.icon .line {
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+  
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+}
+  
+.navBar-min.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+  
+.navBar-min.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}
+
+@media (max-width: 710px) {
+    .content h2 {
+        margin: 20px 0 20px 20px;
+    }
+    .content{
+        font-size: larger;
+    }
+    .icon, .navBar-min {
+        display: flex;
+    }
+
+    .navBar ul {
+        display: none;
+    }
+    .content-title {
+        width: 60%;
+        h2{
+            font-size: medium;
+        }
+    }
+}
+
+@media (min-width: 709px){
+    .icon, .navBar-min {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        display: none;
+    }
+
+    .navBar-min ul {
+        display: none;
+    }
+
+    .navBar-min.active ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
