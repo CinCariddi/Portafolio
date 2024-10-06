@@ -77,15 +77,17 @@ export default function Skill() {
     const { dark } = useTheme(); 
     return (
         <div className={`content-skills ${dark ? 'dark-skill' : 'light-skill'}`}>
-            {
-                skills.map((skill) => {
-                    return (
-                        <div title={skill.name} className='skill'>
-                            {skill.img}
-                        </div>
-                    )
-                })
-            }
+            <div className='skills'>
+                {
+                    skills.map((skill) => {
+                        return (
+                            <div title={skill.name} className='skill'>
+                                {skill.img}
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

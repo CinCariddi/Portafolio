@@ -28,15 +28,15 @@ export default function NavBar() {
                         <div className='line'></div>
                     </li>
                     <li className='navBar-ul-li'>
-                        <a href="#" className='navBar-ul-a'>Proyectos</a>
+                        <a href="#proyectos" className='navBar-ul-a'>Proyectos</a>
                         <div className='line'></div>
                     </li>
                     <li className='navBar-ul-li'>
-                        <a href="#" className='navBar-ul-a'>Habilidades</a>
+                        <a href="#habilidades" className='navBar-ul-a'>Habilidades</a>
                         <div className='line'></div>
                     </li>
                     <li className='navBar-ul-li'>
-                        <a href="#" className='navBar-ul-a'>Contacto</a>
+                        <a href="#contacto" className='navBar-ul-a'>Contacto</a>
                         <div className='line'></div>
                     </li>
                 </ul>
@@ -51,13 +51,13 @@ export default function NavBar() {
                         <a  className='navBar-ul-li-a-min' href="/">Inicio</a>
                     </li>
                     <li>
-                        <a className='navBar-ul-li-a-min' href="#">Proyectos</a>
+                        <a className='navBar-ul-li-a-min' href="/proyectos">Proyectos</a>
                     </li>
                     <li>
-                        <a className='navBar-ul-li-a-min' href="#">Habilidades</a>
+                        <a className='navBar-ul-li-a-min' href="/habilidades">Habilidades</a>
                     </li>
                     <li>
-                        <a className='navBar-ul-li-a-min' href="#">Contacto</a>
+                        <a className='navBar-ul-li-a-min' href="/contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>

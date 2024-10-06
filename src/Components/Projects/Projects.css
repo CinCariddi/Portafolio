@@ -1,42 +1,83 @@
 .content-projects {
     width: 90vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 20px;
 }
 
-.light-projects {
+.projects-line {
+    width: 80vw;
+    height: 70vh;
     border: 2px solid #1c1c1c;
+}
+
+.project-btn {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.light-projects {
+    border: px solid #1c1c1c;
+    background-color: #e3e4e5;
+    box-shadow: 3px 4px 2px 7px #ebebfb;
     .projects {
-        background-color: #ebebfb;
+        background-color: #D1C6F3;
     }
     .btn-projects button {
         color: #351e55;
     }
+    .projects-icons:hover {
+        transition: all 0.3s ease-in-out;
+        color: #0C0A14;
+    }
+    .projects-line {
+        border: 2px solid #1c1c1c;
+    }
+    .project-btn {
+        background-color: #291F43;
+        color: #D1C6F3;
+        box-shadow: 6px 6px 7px 3px #ac89e2;
+    }
 }
 
 .dark-projects {
-    border: 2px solid #e3e4e5;
+    border: 1px solid #e3e4e5;
+    background-color: #1c1c1c;
+    box-shadow: 3px 4px 2px 7px #1c1c1c;
     .projects {
         background-color: #351e55;
     }
     .btn-projects button {
         color: #e3e4e5;
     }
+    .projects-icons:hover {
+        transition: all 0.3s ease-in-out;
+        color: #ac89e2;
+    }
+    .projects-line {
+        border: 2px solid #ebebfb;
+    }
+    .project-btn {
+        color: #291F43;
+        background-color: #D1C6F3;
+        box-shadow: 3px 4px 12px 3px #ac89e2;
+    }
 }
 
 .projects {
-    height: 80vh;
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 20px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .projects-img {
-    height: 70%;
+    height: 65%;
     width: 100%;
     mask-image: linear-gradient(
         black 80%, 
@@ -60,6 +101,9 @@
 
 .projects-card {
     height: 20%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-projects {
@@ -67,6 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1rem;
 }
 
 .btn-projects button {

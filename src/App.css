@@ -1,13 +1,29 @@
 .light-mode {
   background-image: linear-gradient(#FFFFFF, #ac89e2);
-  color: #0C0A14;
+  color: #363538;
   box-shadow: 0 16px 4px 0 #291F43;
+  .btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #0C0A14;
+  }
+  .home-title {
+    color: #d1c6f3;
+    text-shadow: -2px -2px 0 #ac89e2, 2px -2px 0 #69518e, -2px 2px 0 #4d3e71, 2px 2px 0 #291F43;
+  }
 }
 
 .dark-mode{
   background-image: linear-gradient(#0C0A14, #291F43);
   color: #FFFFFF;
   box-shadow: 0 16px 4 0 #ffffff;
+  .btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #ac89e2;
+  }
+  .home-title {
+    color: #291f43;
+    text-shadow: -2px -2px 0 #d1c6f3, 2px -2px 0 #ac89e2, -2px 2px 0 #9575cd, 2px 2px 0 #9575cd;
+  }
 }
 
 /* Fuente de titulo */

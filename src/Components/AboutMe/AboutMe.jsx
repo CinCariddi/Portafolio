@@ -2,6 +2,8 @@ import './AboutMe.css'
 import { useState, useEffect } from "react";
 import { useTheme } from '../../Modules/ThemeContext';
 import astronauta from '../../Asset/astronauta.PNG'
+import CV from '../../Asset/CVCintiaCariddi.pdf'
+import perfil from '../../Asset/Profile.pdf'
 
 export default function AboutMe() {
     const { dark } = useTheme(); 
@@ -51,12 +53,14 @@ export default function AboutMe() {
                 <p>
                     Con experiencia en tecnologías como React, Node.js y bases de datos SQL/NoSQL, he desarrollado soluciones eficientes que han mejorado el rendimiento de las aplicaciones en las que he trabajado. Mi capacidad para integrarme rápidamente en equipos y proyectos me ha permitido aportar desde el primer día, siempre con un enfoque hacia la mejora continua y la innovación.
                 </p>
-                {/*<a download='CV' href=''>
-                    Descargar CV
-                </a>
-                <a download='PerfilLinkeIn' href=''>
-                    Descargar Perfil LinkedIn
-                </a>*/}
+                <div className='about-me-buttoms'>
+                    <a download='CV' href={CV} className='about-me-btn btn'>
+                        Descargar CV
+                    </a>
+                    <a download='Perfil LinkeIn' href={perfil} className='about-me-btn btn'>
+                        Descargar Perfil LinkedIn
+                    </a>
+                </div>
             </div>
             <div className='about-me-img-content'>
                 <img src={astronauta} alt="img not found" className='about-me-img'/>

@@ -11,6 +11,8 @@
     height: 4rem;
     text-align: center;
     font-weight: 600;
+    padding-left: 5%;
+    box-shadow: 3px 4px 12px 3px #ac89e2;
 }
 
 .light-navBar {
@@ -19,7 +21,7 @@
 
     .navBar-ul-li:hover {
         .navBar-ul-a {
-            color: #D1C6F3;
+            color: #ac89e2;
             text-shadow: none;
         }
     
@@ -27,8 +29,11 @@
             height: 0.2rem;
             width: 100%;
             margin-top: 5px;
-            background-color: #D1C6F3;
+            background-color: #ac89e2;
         }
+    }
+    .navBar-ul-a {
+        color: #0C0A14;
     }
     .icon {
         background-color: #FFFFFF;
@@ -51,15 +56,18 @@
 
     .navBar-ul-li:hover {
         .navBar-ul-a {
-            color: #D1C6F3;
+            color: #FFFFFF;
             text-shadow: none;
         }
         .line {
             height: 0.2rem;
             width: 100%;
             margin-top: 5px;
-            background-color: #D1C6F3;
+            background-color: #FFFFFF;
         }
+    }
+    .navBar-ul-a {
+        color: #ac89e2;
     }
     .icon {
         background-color: #0C0A14;
@@ -81,6 +89,7 @@
     width: 50%;
     display: flex;
     align-items: center;
+    margin-left: 2.5%;
 }
 
 .content-navBar h2 {
@@ -99,17 +108,19 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 60%;
+    width: 55%;
     position: absolute;
     right: 0;
     font-size: larger;
+    justify-content: center;
 }
   
 .navBar-ul-li {
     cursor: pointer;
-    flex: 1;
+    /* flex: 1; */
     padding: 10px;
     text-align: center;
+    width: 150px;
 }
 
 .navBar-ul-a, 
@@ -215,6 +226,9 @@
 }
 
 @media (min-width: 709px){
+    .content-navBar {
+        padding: 0;
+    }
     .icon, .navBar-min {
         position: fixed;
         right: 15px;

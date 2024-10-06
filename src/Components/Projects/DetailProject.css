@@ -1,0 +1,212 @@
+.detail-project-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+}
+
+.project-web-container{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 4rem 2rem 3rem 2rem;
+}
+
+.window-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.window {
+    border-radius: 16px 16px 0 0;
+    padding: 0 10px 0 10px;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.eyelash-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.eyelash {
+    padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+.navigation-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #d1c4e9;
+    height: 2rem;
+    margin-top: 20px;
+    border-radius: 16px 0 0 0;
+}
+
+.link-container {
+    padding-left: 1rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.web-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.web-img-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.web-text-container {
+    padding: 1rem;
+    width: 50%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.web-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.web-img-top-right {
+    width: 45%;
+    border-radius: 40px 40px 10px 40px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.web-img-top-left {
+    width: 45%;
+    border-radius: 40px 40px 40px 10px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.web-img-bottom-right {
+    width: 45%;
+    border-radius: 40px 10px 40px 40px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.web-img-bottom-left {
+    width: 45%;
+    border-radius: 10px 40px 40px 40px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.web-text-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.web-text-container li {
+    font-size: medium;
+}
+
+.detail-project-icon {
+    margin: 2px
+}
+
+@media (max-width: 750px){
+    .web-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .web-img-container{
+        width: 100%;
+    }
+    .web-text-container{
+        width: 90%;
+        padding: 0;
+    }
+}
+
+.light-detail-project {
+    .window {
+        background-color: #ac89e2;
+        border: 0.5px solid #291F43;
+    }
+    .eyelash {
+        background-color: #ac89e2;
+        border: 0.5px solid #291F43;
+    }
+    .navigation-bar-container {
+        background-color: #d1c6f3;
+        border: 2px solid #0C0A14;
+    }
+    .link-container {
+        border: 1px solid #291F43;
+    }
+    .web-container {
+        background-color: #d1c6f3;
+        border: 2px solid #291F43;
+    }
+    .web-img-top-right {
+        border: 2px solid #291F43;
+    }
+    .web-img-top-left {
+        border: 2px solid #291F43;
+    }
+    .web-img-bottom-right {
+        border: 2px solid #291F43;
+    }
+    .web-img-bottom-left {
+        border: 2px solid #291F43;
+    }
+}
+
+.dark-detail-project {
+    .window {
+        background-color: #291F43;
+        border: 0.5px solid #ac89e2;
+    }
+    .eyelash {
+        background-color: #291F43;
+        border: 0.5px solid #ac89e2;
+    }
+    .navigation-bar-container {
+        background-color: #0C0A14;
+        border: 2px solid #d1c6f3;
+    }
+    .link-container {
+        /* border: 1px solid #9575cd; */
+        background-color: #9575cd;
+    }
+    .web-container {
+        background-color: #291F43;
+        border: 2px solid #9575cd;
+    }
+    .web-img-top-right {
+        border: 2px solid #d1c6f3;
+    }
+    .web-img-top-left {
+        border: 2px solid #d1c6f3;
+    }
+    .web-img-bottom-right {
+        border: 2px solid #d1c6f3;
+    }
+    .web-img-bottom-left {
+        border: 2px solid #d1c6f3;
+    }
+}

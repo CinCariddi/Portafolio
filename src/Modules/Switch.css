@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid darkviolet;
+    border: 2px solid #ac89e2;
     border-radius: 25px;
 }
 
@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     margin: 2px;
-    transition: all 0.2s ease-in-out;
 }
 
 .btn-switch-image-dark, 

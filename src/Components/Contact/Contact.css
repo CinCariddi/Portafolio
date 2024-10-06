@@ -1,0 +1,149 @@
+.light-contact {
+    box-shadow: 3px 4px 12px 3px #291F43;
+    .content-networks {
+        background-color: #D1C6F3;
+    }
+    .networks {
+        color: #291F43;
+    }
+    .content-form {
+        background-color: #e3e4e5;
+    }
+    .form-label{
+        background-color: #291F43;
+        color: #D1C6F3;
+    }
+    .form-input, 
+    .form-textarea {
+        background-color: #D1C6F3;
+        color:#291F43;
+    }
+    .form-btn{
+        color: #D1C6F3;
+        background-color:#291F43;
+    }
+}
+
+.dark-contact {
+    box-shadow: 3px 4px 12px 3px #D1C6F3;
+    .content-networks {
+        background-color: #291F43;
+    }
+    .networks {
+        color: #D1C6F3;
+    }
+    .content-form {
+        background-color: #1c1c1c;
+    }
+    .form-label{
+        background-color: #D1C6F3;
+        color: #291F43;
+    }
+    .form-input, 
+    .form-textarea {
+        background-color: #291F43;
+        color:#D1C6F3;
+    }
+    .form-btn{
+        background-color: #D1C6F3;
+        color:#291F43;
+    }
+}
+
+.content-contact {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: "Sofadi One", system-ui;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.content-networks {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 0 0 1rem;
+    padding: 1.2rem;
+}
+
+.networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.networks p {
+    margin-left: 10px;
+}
+
+.form-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 0.5rem;
+}
+
+.content-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.form-label{
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    width: 150px;
+    padding: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.form-input, 
+.form-textarea {
+    height: 1.5rem;
+    width: 24rem;
+    padding: 0.5rem;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+}
+
+.form-btn {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+@media (max-width: 750px){
+    .content-contact {
+        flex-direction: column;
+    }
+    .content-networks {
+        width: 90%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .content-form {
+        width: 90%;
+        border-radius: 0 0 1rem 1rem;
+    }
+    .form-label {
+        width: 50%;
+    }
+    .form-input, 
+    .form-textarea {
+        width: 70%;
+    }
+}
