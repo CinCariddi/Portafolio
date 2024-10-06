@@ -6,7 +6,7 @@ import turnos from '../../Asset/EstudioJuridico/estudio-juridico-turnos.jpeg'
 
 export default function EstudioJuridico() {
     return (
-        <DetailProject title={"Estudio Juridico"} link={"https://estudio-juridico"}
+        <DetailProject title={"Estudio Juridico"} link={"https://estudio-juridico-nolis.vercel.app/Inicio"}
             content={
                 <div className="web-container">
                     <div className='web-img-container'>
